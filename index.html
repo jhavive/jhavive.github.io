@@ -1,1 +1,193 @@
-<!doctype html><html lang="en"><head></head><body><section class="root hide-root" id="index"></section><script type="text/javascript" src="/runtime-index_bundle-ee2395956159e4becaf2.js"></script><script type="text/javascript" src="/modules-index_bundle-ee2395956159e4becaf2.js"></script><script type="text/javascript" src="/main-index_bundle-ee2395956159e4becaf2.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: Inconsolata;
+                src: url("./Inconsolata.otf") format("opentype");
+            }
+            @font-face {
+                font-family: IntegralCF ;
+                src: url("./IntegralCF-Bold.otf") format("opentype");
+            }
+            html,body{
+                margin: 0px;
+                padding: 0px;
+                background-color: #f2e0d7;
+                overflow: hidden;
+            }
+            h5{
+                margin: 0px;
+                padding: 0px;
+                font-family: Inconsolata;
+                text-align: right;
+                font-size:18px;
+            }
+            header{
+                /* margin: 72px; */
+                position: fixed;
+                top: 27px;
+                left: 72px;
+                width: calc(100% - 144px);
+                display: flex;
+                justify-content: space-between;
+            }
+            footer #header-right{
+                display: none;
+            }
+            header #header-right{
+                display: block;
+            }
+            #logo{
+                width: 200px;
+                /* height: 43px; */
+                object-fit: contain;
+
+            }
+            #body{
+                width: 500px;
+                margin: 280px auto; 
+                position: relative;
+            }
+            #body-left{
+                position: absolute;
+                top: -80px;
+                left: -210px;
+                z-index: 100;
+                height: 260px;
+            }
+            #body-right{
+                position: absolute;
+                bottom: 40px;
+                right: -160px;
+                height: 180px;
+            }
+            .body-text{
+                font-family: IntegralCF;
+                padding:0px;
+                vertical-align: middle;
+                color: #f2e0d7;
+                background-color: black;
+                font-size: 85px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.96;
+                letter-spacing: -1.7px;
+                text-transform: uppercase;
+                margin: 0px 0px 20px 0px;
+                text-align: center;
+            }
+            footer{
+                position: fixed;
+                bottom: 40px;
+                left: 72px;
+                width: calc(100% - 144px);
+                display: flex;
+                justify-content: space-between;
+            }
+            @media only screen and (max-device-width : 1024px) {
+                h5{
+                    margin: 0px;
+                    padding: 0px;
+                    font-family: Inconsolata;
+                    text-align: right;
+                    font-size:24px;
+                }
+                header{
+                    /* margin: 72px; */
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                #logo{
+                    width: 400px;
+                    /* height: 43px; */
+                    margin:80px auto;
+                    object-fit: contain;
+
+                }
+                header #header-right{
+                    display: none;
+                }
+                footer #header-right{
+                    display: block;
+                }
+                #body{
+                    width: 80%;
+                    margin: 70% auto; 
+                    position: relative;
+                }
+                #body-left{
+                    position: absolute;
+                    top: -300px;
+                    left: -10px;
+                    z-index:0;
+                    height: 350px;
+                }
+                #body-right{
+                    position: absolute;
+                    bottom: -250px;
+                    right: 0px;
+                    height: 250px;
+                }
+                .body-text{
+                    font-family: IntegralCF;
+                    padding:0px;
+                    vertical-align: middle;
+                    color: #f2e0d7;
+                    background-color: black;
+                    font-size: 120px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.96;
+                    letter-spacing: -1.7px;
+                    text-transform: uppercase;
+                    margin: 0px 0px 20px 0px;
+                    text-align: center;
+                }
+                footer{
+                    position: fixed;
+                    bottom: 40px;
+                    left: 72px;
+                    width: calc(100% - 144px);
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="./blogo.png" id="logo">
+            
+            <div id="header-right">
+                <h5>PROGRESS 01.</h5>
+                <h5>200120</h5>
+            </div>
+        </header>
+        <div id="body">
+            <!-- <mark>we won’t </mark><mark>keep you</mark><mark>hanging</mark><mark>for long</mark> -->
+            <img src="blue-screens.png" id="body-left"/>
+
+            <p class="body-text" style="transform: rotate(1deg);">we won’t </p>
+            <p class="body-text" style="transform: rotate(-1deg);">keep you</p>
+            <p class="body-text" style="transform: rotate(364deg);text-align:left">hanging</p>
+            <p class="body-text" style="transform: rotate(-1deg);text-align:left">for long</p>
+            <img src="yellow-error-tabs.png" id="body-right"/>
+
+        </div>
+        <footer>
+            <h5>&#169; Bristag 2020</h5>
+            <h5>All rights reserved</h5>
+            <div id="header-right">
+                <h5>PROGRESS 01.</h5>
+                <h5>200120</h5>
+            </div>
+        </footer>
+    </body>
+</html>
